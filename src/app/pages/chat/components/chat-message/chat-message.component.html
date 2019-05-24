@@ -1,0 +1,11 @@
+<div class="chat-message d-flex">
+  <div class="bubble d-flex flex-column">
+    <div class="d-flex align-items-baseline">
+      <span class="name">{{message.sender.firstName}} {{message.sender.lastName}}</span>
+      <span class="timestamp">{{message.createdAt.toDate() | date:'yyyy-MM-dd HH:mm:ss'}}</span>
+    </div>
+    <div class="message">
+      {{message.message}}
+    </div>
+  </div>
+</div>
